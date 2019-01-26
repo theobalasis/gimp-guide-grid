@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 from gimpfu import *
 
 
@@ -34,7 +32,7 @@ register(
     "python_fu_guide_grid",
     "Guide Grid",
     "Creates a grid of guides with specified spacing.",
-    "Theodoros Balasis", "", "2017",
+    "Theodoros Balasis", "", "2019",
     "Guide Grid",
     "*",
     [
