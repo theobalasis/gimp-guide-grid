@@ -1,6 +1,5 @@
 from gimpfu import *
 
-
 def guide_grid(image, drawable, hspace, vspace, percent):
     pdb.gimp_image_undo_group_start(image)
     imageHeight = pdb.gimp_image_height(image)
@@ -38,8 +37,8 @@ register(
     [
         (PF_IMAGE, "image", "Input Image", None),
         (PF_DRAWABLE, "drawable", "Input Layer", None),
-        (PF_INT, "hspace", "Horizontal Spacing", 1),
-        (PF_INT, "vspace", "Vertical Spacing", 1),
+        (PF_FLOAT, "hspace", "Horizontal Spacing", 1.0),  # change PF_INT to PF_FLOAT
+        (PF_FLOAT, "vspace", "Vertical Spacing", 1.0),  # change PF_INT to PF_FLOAT
         (PF_BOOL, "percent", "By percent?", 0)
     ],
     [],
